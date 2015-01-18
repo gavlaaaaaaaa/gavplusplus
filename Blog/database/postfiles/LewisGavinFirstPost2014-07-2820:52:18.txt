@@ -1,0 +1,8 @@
+After graduating with an International First Class with Honours in Computer Science from Staffordshire university in the summer 2014, I decided I should use the free time I have remaining before work begins to good effect.
+
+With my work life not starting until after the summer period, I used this time to read up on different technologies and practises and write about what new things I discovered and what new techniques I learnt along the way. This allowed me to link my posts to others but also use it as a personal reference.
+
+
+The posts will outline anything new that I have discovered as well as my thoughts on certain techniques and technologies that I've learnt during my time as a computer scientist. They will also contain any guides or pointers that I would have found useful when starting a topic or using a specific technology.
+
+Any source code or project can be found at the bottom of my homepage (click my logo next to my name at the top) under the resources section.

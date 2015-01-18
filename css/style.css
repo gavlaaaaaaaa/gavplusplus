@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+    
+}
+
+#home {
+background: url(pics/home-bg.jpg) 50% 0 repeat fixed;
+min-height:1000px;
+height:1000px;
+margin: 0 auto;
+width: 100%;
+max-width: 1920px;
+position: relative;
+
+}
+#home article{
+height: 458px;
+position: absolute;
+text-align: center;
+top:150px;
+width:100%;
+font-size:40px;
+font-family: 'Raleway';
+
+color:white;
+}
+
+#about {
+background: url(pics/about-bg.jpg) 50% 0 repeat fixed;
+min-height:1500px;
+height:1500px;
+margin: 0 auto;
+width: 100%;
+max-width: 1920px;
+position: relative;
+-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+box-shadow: 0 0 50px rgba(0,0,0,0.8);
+
+
+} 
+#about p {  
+  position: absolute; 
+  text-align: left;
+  left: 15%;
+  top: 230%; 
+  width: 70%;
+  font-size:30px;
+  font-family: 'Raleway';
+  color:white;
+}
+#about h1 { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 100px; 
+  width: 100%;
+  font-size:40px;
+  font-family: 'Raleway';
+  color:white;
+
+}
+#about h2 {  
+  position: absolute; 
+  text-align: center; 
+  top: 200%; 
+  width: 100%;
+  font-size:40px;
+  font-family: 'Raleway';
+  color:white;
+}
+#about article { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 100px; 
+  width: 100%;
+  font-size:20px;
+  font-family: 'Raleway';
+  color:white;
+}
+#about table{
+  position: absolute; 
+  text-align: center; 
+  top: 150px; 
+  width: 100%;
+  font-size:20px;
+  font-family: 'Raleway';
+  color:white;
+}
+th{
+font-size:30px;
+text-decoration:underline;
+}
+
+#resources {
+background: url(pics/polygon3-bg.jpg) 60% 0 repeat fixed;
+min-height:1000px;
+height:1000px;
+margin: 0 auto;
+width: 100%;
+max-width: 1920px;
+position: relative;
+-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+#resources h1 { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 100px; 
+  width: 100%;
+  font-size:40px;
+  font-family: 'Raleway';
+  color:white;
+
+}
+#resources p {  
+  position: absolute; 
+  text-align: center;
+  top: 200px; 
+  width: 100%;
+  margin: 0 auto;
+  font-size:30px;
+  font-family: 'Raleway';
+  color:white;
+}
+#resources a{
+color: white;
+}
+#home a{
+color: white;
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+
+#icon{
+    position: relative;
+    margin:0;
+    padding:0;
+    max-height: 50px;
+}

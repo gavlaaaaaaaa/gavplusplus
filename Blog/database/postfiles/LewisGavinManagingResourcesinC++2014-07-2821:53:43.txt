@@ -1,0 +1,23 @@
+When writing classes and functions in C++ that directly deal with resources, or receive or return resources to/from a client using this implementation, it is important to ensure these resources are managed.
+
+Due to objects having the ability to be dynamically allocated with the <code>new</code> keyword, when passing references and pointers of these objects as parameters, or returning them can sometimes lead to confusion as to who has the responsibility over the cleanup of these resources later on.
+
+This post will identify some things that I have experienced and ways I have discovered to solve some of these problems. If you haven't already, you should read <a href="http://www.amazon.co.uk/Effective-Specific-Improve-Programs-Designs/dp/0321334876">Scott Meyers Effective C++: 50 ways to Improve your programs and designs.</a>
+
+The most effective way to ensure good management over resources is by wrapping pointers inside of objects. Using objects to manage resources gives flexibility and allows for better function design. This is because it makes it clear to the client exactly what they should pass in, and to be confident that the resource will be cleaned up when it is finished with.
+
+An example of objects that manage resources are the smart pointer objects in C++. Wrapping your pointers within a <code>shared_ptr</code> object for example ensures that they are automatically free'd when they go out of scope or the program ends. This prevents reliance on the client of the function to delete a resource they have received by return when they have finished with it, or to have worry about a resource being deleted when they pass it to one a function.
+
+Again, as hinted previously, enforcing a return type of a smart pointer object then enforces that the client also uses a smart pointer, which again reduces the chance of leaks later on.
+
+<div id="codediv">int MClass::example_function(std::tr1::shared_ptr<Person> person)
+{
+    /* ... do some stuff with person here */
+    return integer_value;
+}
+/* do not have to worry about deleting person*</div>
+        
+<p>
+As you can see in the sample code above - by enforcing in the contract that a smart pointer must be passed, the client can be certain, if they want to retain use of the pointer after this function has finished its work, that it wont be deleted. 
+
+Again, if the sole use of passing the object was to obtain the integer value returned by the function and after this it can be destroyed, then once it goes out of scope (and all other references are destroyed as its a shared_ptr) it will be automatically dealt with.</p>

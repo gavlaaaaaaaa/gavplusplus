@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+    
+}
+
+body{
+    margin:0;
+	padding:0;
+    font-family: 'Raleway';
+}
+
+h1 {
+    position: a;
+    text-align: center;
+    width:100%;
+    margin:0;
+    padding-top: 5px;
+    padding-bottom:5px;
+    background: rgba(90, 168, 199, 0.74);
+    color: #203b84;
+    padding-left:5%;
+}
+h2{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    color: #203b84;
+    padding-left: 5%;
+}
+h3{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    color: #203b84;
+    padding-left: 5%;
+    padding-top:60px;
+}
+
+p{
+    position: relative;
+    text-align: left;
+    padding-left: 25%;
+    padding-right: 10%;
+    line-height:2;
+    font-size: 100%;
+    margin:0;
+    padding-bottom: 5%;
+    
+}
+
+img{
+    margin:0;
+    padding:0;
+    max-height: 30px;
+}
+
+
+#posts p{
+    margin:0;
+    padding: 2%;
+    padding-left: 10%;
+    color: white;
+}
+
+#text a{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#poststitle {
+    background: #2990db;
+    position: relative;
+    padding-top: 2%;
+    padding-bottom:1%;
+    width:18%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    border-bottom: solid;
+    border-bottom-color: white;
+}
+
+#icon{
+    position: relative;
+    margin:0;
+    padding:0;
+    max-height: 50px;
+}
+
+#posts {
+    position: absolute;
+    width: 18%;
+    background: #2990db;
+    height: 100%;
+    float:left;
+    z-index: 1;
+}
+
+code{
+    font-size: 120%;
+    padding: 10px 10px 10px 10px;
+    background-color: gray;
+    color:white;
+    position:relative;
+}
+
+#codediv{
+    font-size: 120%;
+    background-color: rgba(230, 215, 171, 0.86);
+    color:#2525c7;
+    position:relative;
+    font-family: monospace;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left:25%;
+    width: 60%;
+    padding: 20px;
+
+}
+
+#nav a{
+    color:#203b84;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom:5px;
+
+}
+
+#nav a:hover {
+    background-color:#203b84;
+    color:white;
+}
+
+#nav{
+    width:100%;
+    position:relative;
+    text-align: center;
+    padding:5px;
+    padding-left: 6%;
+    background-color: #2990db;
+}
+
+
+    

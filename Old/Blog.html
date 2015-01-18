@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Get to know me</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+    	<link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Concert+One' rel='stylesheet' type='text/css'>
+
+      <link rel="stylesheet" type="text/css" title="styles" href="styles.css" >
+      <link rel="alternate stylesheet" type="text/css" title="styles2" href="styles2.css">
+  </head>
+  <body >
+  <div id="containter">
+
+      <header> <form>
+          <input type="submit"
+                 onclick="switch_style('styles');return false;"
+                 name="theme" value="Default" id="styles">
+          <input type="submit"
+                 onclick="switch_style('styles2');return false;"
+                 name="theme" value="Alternative" id="styles2">
+      </form><h1>Get to know me</h1>
+    </header>
+
+
+    <div id="content">
+
+      	<nav>
+      		<a href="Home.html"><navbutton>Home</navbutton></a>
+     		<a href="Blog.html"><navbutton>Blog</navbutton></a>
+     		<a href="Careers.html"><navbutton>Careers</navbutton></a>
+     		<a href="Work.html"><navbutton>Work</navbutton></a>
+     		
+		</nav>
+      
+
+      
+      <div id="textbox">
+      <form id="newpost" method='post' action="script:post()" >
+        <textarea id="posttext" cols="25" rows="5" placeholder="Type post here..."></textarea>
+     	<input type="submit" onclick="post();" value="Post!"/>
+      </form>
+        <p id="submitted"></p>
+
+      </div>
+    </div>
+    <footer>Lewis Gavin</footer>
+   </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+1, Lewis Gavin, About the Blog, post1.txt, 24 - July - 2014,
+2, Lewis Gavin, Managing Resources in C++, resourcemanagement.txt, 25 - July - 2014,
+3, Lewis Gavin, The Copy Swap Idiom and why you should use it, file2.txt, 12/08/2014,
+4, Lewis Gavin, The DRY principle - Stop and Think before Ctrl-C and Ctrl-V, 2file.txt, 30/09/2014,
