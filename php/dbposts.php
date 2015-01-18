@@ -4,7 +4,8 @@ class MyDB extends SQLite3
 {
   function __construct()
   {
-     $this->open('database/posts.db');
+      
+     $this->open('Blog/database/posts.db');
   }
 
 }
@@ -13,7 +14,7 @@ if(!$db){
     echo 'Unable to connect to Database  - ' . $db->lastErrorMsg();
 }
 
-$POSTPAGENAME = "/posts.php";
+$POSTPAGENAME = "../posts.php";
 
 
 if(isset($_POST['submit']))
@@ -27,7 +28,7 @@ function insertPost($db, $author, $title, $posttext){
     $filename = $author.$title.$create_time.".txt";
     $filename = preg_replace('/\s+/', '', $filename);
     $content = $_POST['posttextinput'];
-    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/database/postfiles/$filename", "wb");
+    $fp = fopen($_SERVER['DOCUMENT_ROOT'] . "/Blog/database/postfiles/$filename", "wb");
     fwrite($fp, $content);
     fclose($fp);
     
@@ -38,7 +39,7 @@ function insertPost($db, $author, $title, $posttext){
     }
     else{
         $pid = $db->lastInsertRowID();
-        header('Location: http://localhost/posts.php?post='.$pid);
+        header('Location: http://localhost/Blog/posts.php?post='.$pid);
    }
      
 }
@@ -73,7 +74,7 @@ function displayPost($db, $postid){
 
         $createtime = $date->format('d/m/Y');
 
-        $handle = fopen("database/postfiles/".$filename, "r");
+        $handle = fopen("Blog/database/postfiles/".$filename, "r");
         $contents = fread($handle, 5000);
         fclose($handle);
         $contents = nl2br($contents);
