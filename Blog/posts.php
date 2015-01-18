@@ -17,12 +17,12 @@
 
 <body>
 
-    <h1><a href="../index.html"><img src="../css/pics/icon.png" id="icon"/></a>Lewis Gavin<br>
+    <h1><a href="../aboutme.html"><img src="../css/pics/icon.png" id="icon"/></a>Lewis Gavin<br>
         <a href="https://uk.linkedin.com/in/lewisdgavin"><img src="../css/pics/linkedin-white.svg"/></a>
         <a href="https://plus.google.com/+LewisGavin/about"><img src="../css/pics/gplus-white.svg"/></a>
         <a href="https://twitter.com/GavLaaaaaaaa"><img src="../css/pics/twitter-white.svg"/></a></h1>
     
-    <div id="nav"><a href="posts.php">Home</a><a href="createpost.php">Submit Post</a><a href="../index.html">About Me</a></div>
+    <div id="nav"><a href="posts.php">Home</a><a href="createpost.php">Submit Post</a><a href="../aboutme.html">About Me</a></div>
                
         <?php 
             ini_set('display_errors',1); 
