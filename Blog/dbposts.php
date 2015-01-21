@@ -5,7 +5,7 @@ class MyDB extends SQLite3
   function __construct()
   {
       
-     $this->open('Blog/database/posts.db');
+     $this->open('database/posts.db');
   }
 
 }
@@ -14,7 +14,7 @@ if(!$db){
     echo 'Unable to connect to Database  - ' . $db->lastErrorMsg();
 }
 
-$POSTPAGENAME = "../posts.php";
+$POSTPAGENAME = "/Blog/posts.php";
 
 
 if(isset($_POST['submit']))
@@ -39,11 +39,10 @@ function insertPost($db, $author, $title, $posttext){
     }
     else{
         $pid = $db->lastInsertRowID();
-        header('Location: http://localhost/Blog/posts.php?post='.$pid);
+        header('Location: http://gavplusplus/Blog/posts.php?post='.$pid);
    }
      
 }
-
 
 if($_SERVER['SCRIPT_NAME'] == $POSTPAGENAME){
 
@@ -61,6 +60,7 @@ else{
 }
 
 function displayPost($db, $postid){
+
     $ret = $db->query("SELECT * FROM post WHERE id=$postid");
     $row = $ret->fetchArray(SQLITE3_ASSOC);
     if(@$row['id'] != null){
@@ -74,7 +74,7 @@ function displayPost($db, $postid){
 
         $createtime = $date->format('d/m/Y');
 
-        $handle = fopen("Blog/database/postfiles/".$filename, "r");
+        $handle = fopen("database/postfiles/".$filename, "r");
         $contents = fread($handle, 5000);
         fclose($handle);
         $contents = nl2br($contents);
@@ -101,4 +101,4 @@ function loadLinks($db){
         echo "</p></div>";
 }
     
-?>
+?>		
