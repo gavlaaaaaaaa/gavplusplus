@@ -51,15 +51,27 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
   font-family: 'Raleway';
   color:white;
 }
+p1{
+  position: absolute; 
+  text-align: left;
+  left: 15%;
+  top: 230%; 
+  width: 70%;
+  font-size:20px;
+  font-family: 'Raleway';
+  color:white;
+
+}
 #about h1 { 
   height: 458px; 
   position: absolute; 
-  text-align: center; 
+  text-align: left; 
   top: 100px; 
   width: 100%;
   font-size:40px;
   font-family: 'Raleway';
   color:white;
+  padding-left: 50px;
 
 }
 #about h2 {  

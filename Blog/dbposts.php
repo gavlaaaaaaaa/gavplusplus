@@ -68,7 +68,7 @@ function displayPost($db, $postid){
         $author = $row['author'];
         $createtime = $row['create_time'];
         $filename = $row['filename'];
-
+        date_default_timezone_set('Europe/London');
         $date = new DateTime($createtime);
         $date->setTimezone(new DateTimeZone('Europe/London'));
 

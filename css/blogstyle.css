@@ -7,13 +7,16 @@
 }
 
 body{
+    position: fixed;
     margin:0;
 	padding:0;
+    width: 100%;
     font-family: 'Raleway';
+    height: 100%;
 }
 
 h1 {
-    position: a;
+    position: relative;
     text-align: center;
     width:100%;
     margin:0;
@@ -21,7 +24,6 @@ h1 {
     padding-bottom:5px;
     background: rgba(90, 168, 199, 0.74);
     color: #203b84;
-    padding-left:5%;
 }
 h2{
     position:absolute;
